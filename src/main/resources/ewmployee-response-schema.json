@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "empId",
+        "fullName",
+        "salary",
+        "bonus"
+    ],
+    "properties": {
+        "empId": {
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "name": {
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+
+        },
+        "salary": {
+            "type": "integer",
+            "title": "The salary schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "bonus": {
+            "type": "number",
+            "title": "The bonus schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0
+        }
+    },
+    "additionalProperties": true
+}
